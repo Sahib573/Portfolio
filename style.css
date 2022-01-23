@@ -132,7 +132,7 @@ section .title {
 }
 
 .about {
-  background-image: url("media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -192,7 +192,7 @@ section .title {
 }
 
 .skills {
-  background-image: url("/media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -278,7 +278,7 @@ section .title {
 
 .proj {
   /* background-color: rgb(175, 166, 168); */
-  background-image: url("/media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -336,7 +336,7 @@ section .title {
 
 .hobby {
   /* background-color: rgb(214, 74, 74); */
-  background-image: url("media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
