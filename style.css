@@ -85,6 +85,7 @@ section .title {
   display: flex;
   background-image: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   color: #fff;
   background-position: center;
