@@ -83,10 +83,12 @@ section .title {
 
 .home {
   display: flex;
-  background: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg") no-repeat
-    center;
+  background-image: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg");
+  background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
+  background-position: center;
+
   min-height: 500px;
   background-attachment: fixed;
   background-size: cover;
@@ -372,7 +374,7 @@ section .title {
 }
 
 .contact {
-  background-image: url("/media/jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+  background-image: url("jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
   display: grid;
   height: 100vh;
   color: #fff;
