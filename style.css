@@ -83,8 +83,9 @@ section .title {
 
 .home {
   display: flex;
-  background: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg") no-repeat
-    center;
+  background-image: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
