@@ -192,7 +192,7 @@ section .title {
 }
 
 .skills {
-  background-image: url("/media/17973908.jpg");
+  background-image: url("media/17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -278,7 +278,7 @@ section .title {
 
 .proj {
   /* background-color: rgb(175, 166, 168); */
-  background-image: url("/media/17973908.jpg");
+  background-image: url("media/17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -372,7 +372,7 @@ section .title {
 }
 
 .contact {
-  background-image: url("/media/jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+  background-image: url("media/jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
   display: grid;
   height: 100vh;
   color: #fff;
