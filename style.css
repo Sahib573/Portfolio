@@ -83,8 +83,9 @@ section .title {
 
 .home {
   display: flex;
-  background: url("/media/samantha-gades-BlIhVfXbi9s-unsplash.jpg") no-repeat
-    center;
+  background-image: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -132,7 +133,7 @@ section .title {
 }
 
 .about {
-  background-image: url("media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -192,7 +193,7 @@ section .title {
 }
 
 .skills {
-  background-image: url("media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -278,7 +279,7 @@ section .title {
 
 .proj {
   /* background-color: rgb(175, 166, 168); */
-  background-image: url("media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -336,7 +337,7 @@ section .title {
 
 .hobby {
   /* background-color: rgb(214, 74, 74); */
-  background-image: url("media/17973908.jpg");
+  background-image: url("17973908.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -372,7 +373,7 @@ section .title {
 }
 
 .contact {
-  background-image: url("media/jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+  background-image: url("jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
   display: grid;
   height: 100vh;
   color: #fff;
