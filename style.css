@@ -373,7 +373,7 @@ section .title {
 }
 
 .contact {
-  background-image: url("/media/jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+  background-image: url("jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
   display: grid;
   height: 100vh;
   color: #fff;
