@@ -379,10 +379,10 @@ section .title {
 }
 
 .contact {
-  background-image: url("jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+  background-image: url("17973908.jpg");
   display: grid;
   height: 100vh;
-  color: #fff;
+  color: black;
   min-height: 500px;
   background-attachment: fixed;
   background-size: cover;
