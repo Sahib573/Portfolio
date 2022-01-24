@@ -7,7 +7,11 @@
 
 section,
 #nav-id {
-  padding: 20px 100px;
+  padding: 30px 30px;
+}
+
+section.home{
+  padding: 20px 80px;
 }
 
 section .title {
@@ -65,8 +69,8 @@ section .title {
   color: #fff;
   font-size: 25px;
   font-weight: 500;
-  margin-left: 70px;
-  margin-right: 10px;
+  margin-left: 40px;
+  margin-right: 5px;
   transition: color 0s ease-in-out;
 }
 .navbar .menu li a:hover {
@@ -481,10 +485,10 @@ footer span a:hover {
 }
 
 @media (max-width: 991px) {
-  section,
+  /* section,
   #nav-id {
     padding: 20px 80px;
-  }
+  } */
   .navbar .logo a {
     color: rgb(152, 173, 132);
     font-size: 30px;
@@ -496,10 +500,10 @@ footer span a:hover {
 }
 
 @media (max-width: 700px) {
-  section,
-  #nav-id {
-    padding: 20px 50px;
+  section.home{
+    padding: 20px 40px;
   }
+  
   .navbar .logo a {
     color: rgb(152, 173, 132);
     font-size: 25px;
@@ -508,13 +512,6 @@ footer span a:hover {
   .navbar .menu li a {
     font-size: 20px;
     margin-left: 20px;
-  }
-}
-
-@media (max-width: 991px) {
-  section,
-  #nav-id {
-    padding: 20px 80px;
   }
 }
 
@@ -557,10 +554,13 @@ footer span a:hover {
     font-weight: 900;
   }
   .home .home-content .text-2 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .home .home-content .text-3 {
-    font-size: 32px;
+    font-size: 28px;
+  }
+  .home .home-content .text-1 {
+    margin-top: 10px;
   }
   .home .home-content a {
     font-size: 20px;
@@ -593,5 +593,29 @@ footer span a:hover {
 @media (max-width: 500px) {
   .navbar .logo a {
     font-size: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar .logo a {
+    font-size: 0px;
+  }
+  .pj-container{
+    justify-content: center;
+  }
+  .pj-container .card {
+    flex-basis: 80%;
+  }
+  .home .home-content a{
+    padding:10px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hobby-content{
+    justify-content: center;
+  }
+  .hobby-content .card{
+    flex-basis: 80%;
   }
 }
