@@ -5,11 +5,12 @@
   text-decoration: none;
 }
 
-section,
-#nav-id {
+section {
   padding: 30px 30px;
 }
-
+#nav-id{
+  padding:20px 30px;
+}
 section.home{
   padding: 20px 80px;
 }
