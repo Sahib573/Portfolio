@@ -301,7 +301,7 @@ section .title {
 }
 .pj-container .card {
   flex-basis: 45%;
-  background-color: rgb(141, 129, 129);
+  background-color: rgb(100 93 93 / 46%);
   border-radius: 10px;
   padding: 20px;
   line-height: 30px;
@@ -360,7 +360,7 @@ section .title {
 }
 .hobby-content .card {
   flex-basis: 45%;
-  background-color: rgb(153, 103, 124);
+  background-color: rgb(56 28 40 / 43%);
   border-radius: 10px;
   padding: 20px;
   line-height: 30px;
