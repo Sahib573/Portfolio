@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sahib Singh</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/fbe0c6d47d.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -16,18 +15,18 @@
         </div>
         <ul class="menu">
           <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#about" class="menu-btn">My Hobbies</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
           <li><a href="#proj" class="menu-btn">Projects</a></li>
           <li><a href="#skills" class="menu-btn">Skills</a></li>
-          <li><a href="#contact" class="menu-btn">Contact</a></li>
+          <li><a href="#hobby" class="menu-btn">My Hobbies</a></li>
         </ul>
     </nav>
     <section class="home" id="home">
       <div class="max-width">
-        <div class="home-content">
-          <div class="text-1">Hello, I am</div>
-          <div class="text-2">Sahib Singh</div>
-          <div class="text-3">And I'm a <span class="typing"></span></div>
+        <div data-tilt data-tilt-scale="2" data-tilt-startY="40" class="home-content" style="transform: translateZ(20px);">
+          <div style="transform: translateZ(60px);" class="text-1">Hello, I am</div>
+          <div style="transform: translateZ(80px);" class="text-2">Sahib Singh</div>
+          <div style="transform: translateZ(100px); "class="text-3">And I'm a <span class="typing"></span></div>
           <a href="#hobby">My Hobbies</a>
           <a href="#skills">Skills</a>
         </div>
@@ -38,7 +37,7 @@
         <h2 class="title">About me</h2>
         <div class="about-content">
           <div class="column left">
-            <img src="media/IMG_9755.jpg" alt="" />
+            <img alt="" />
           </div>
           <div class="column right">
             <div class="text"><span class="about-type"></span>
@@ -56,7 +55,7 @@
       <div class="max-width">
         <h2 class="title">My skills</h2>
         <div class="skills-content">
-          <div class="column left">
+          <div class="column left" style="margin:auto;"> 
             <div class="text">
               I know <span class="skill-typing"></span>
             </div>
@@ -65,7 +64,7 @@
             </p>
             <a href="https://github.com/Sahib573" style="font-size:25px;">Follow on GitHub</a>
           </div>
-          <div class="column right">
+          <div class="column right" style="margin:auto;">
             <div class="bars">
               <div class="info">
                 <span>HTML</span>
@@ -121,43 +120,31 @@
       <div class="max-width">
         <h2 class="title">My projects</h2>
         <div class="pj-container">
-          <div class="card">
-            <div class="box">
-              <div class="text">Clomira
-              </div>
+          <div class="row1-container">
+            <div class="box box-down cyan">
+              <h2>Clomira</h2>
               <p>
                 An undergoing project. A website being designed for college
                 students where they will not only find study material related to
                 college classes but also for general topics. And Doubt section
                 for interaction with peers.
               </p>
-              <p>
-                It is being implemented using NEXTJS , TAILWIND, TYPESCRIPT,
-                FIREBASE
-              </p>
               <a href="https://github.com/Sahib573/clomira">Visit</a>
             </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <div class="text">Chrome-Youtube-EXtension
-              </div>
+  
+            <div class="box red">
+              <h2>Chrome-Youtube-EXtension</h2>
               <p>
                 It is an extension for Utube in which we added country icon
                 alongwith channel name and added some features like
                 <span>Theatre Mode</span> , <span>Concentration Mode</span> and
                 other like font change and size change with some validations
               </p>
-              <p>In it we used <span>Youtube API and Javascript</span></p>
               <a href="https://github.com/Sahib573/yt-chrome-ext">Visit</a>
-
             </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <div class="text">
-               Shopify
-              </div>
+  
+            <div class="box box-down blue">
+              <h2>   Shopify</h2>
               <p>
                 It is a E-commerce WEbsite built using DJango and HTML, CSS,
                 JavaScript and JQuery in which products can be added to cart and
@@ -165,79 +152,57 @@
                 using order id obtained while ordering the item.
               </p>
               <a href="https://github.com/Sahib573/Shopify">Visit</a>
-
             </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <div class="text">Foodipie
-              </div>
+            <div class="box orange">
+              <h2>Foodipie</h2>
               <p>It is a food ordering site in which we fetched data from an <span>API</span>. Customer can click on particular item and can we products details like ingredients and price and can also watch Youtube Video to prepare that dish
-              </p>
-              <p>Technologies used are PHP, Javascript, JQuery ,HTML, CSS and little bit Bootstrap</p>
+              </p>    
               <a href="https://github.com/Sahib573/Foodipie">Visit</a>
-
+            </div
+            >
+            <div class="row2-container">
             </div>
           </div>
         </div>
       </div>
     </section>
-
-      <section class="hobby" id="hobby">
-        <div class="max-width">
-          <h2 class="title">My Hobbies</h2>
-          <div class="hobby-content">
-         
-            <div class="card">
-                <div class="box">
-                  <div class="icons">
-                    <i class="fas fa-volleyball-ball"></i>
-                  </div>
-                  <p>
-                   I like to play Badminton and little bit Volleyball.
-                   Except it i like to play Minimilitia and clash of clans whenever i get bored.
-                  </p>    
-                </div>
-              </div>
-            <div class="card">
-                <div class="box">
-                  <div class="icons">
-                    <i class="fab fa-youtube"></i>       
-                           </div>
-                  <p>
-                   I like to watch Interviews, vlogs and Tech related videos specially space and time like stuff over Youtube and watching movies with friends.
-                  </p>    
-                </div>
-              </div>
-            <div class="card">
-                <div class="box">
-                  <div class="icons">
-                    <i class="fas fa-comments"></i>
-                </div>
-                  <p>
-                    I like to talk and do discussions with friends while playing online games.
-                  </p>    
-                </div>
-              </div>
-            <div class="card">
-                <div class="box">
-                  <div class="icons">
-                    <i class="fas fa-drum"></i>                </div>
-                  <p>
-                    I like play and learn Tabla and Harmonium (classical musical instruments).
-                  </p>    
-                </div>
-              </div>
-
-          </div>
-        </div>
+      <section id="my-hobby">
+        <div class="hobby" style="margin-top: 200px;">
+          <h2 style="text-align: center; margin-bottom:60px;font-size: 40px;font-style: italic;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">My Hobbies</h2>
+          <div class="max-width">
+              <div class="hobby-box" >
+                  <div class="hobby-content card1">
+                          <h1 style="text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hobbies are great distractions from the worries and troubles that plague daily living.</h1>
+                      </div>
+                      <div class="card card2">
+                          <h2>I like to do random things .<h2>
+                          </div>
+                          <div class="card card3"> I like play and learn Tabla and Harmonium (classical musical instruments).
+                          </div>
+                          <div class="card card4">   I like to watch Interviews, vlogs and Tech related videos specially space and time like stuff over Youtube and watching movies with friends.
+               
+                          </div>
+                         
+                      <div class="card card7"> I like play and learn Tabla and Harmonium (classical musical instruments).
+                      </div>
+                      <div class="card card8">
+                              <h2>Doing random things makes me happy.<h2>
+                              </div>
+                              <div class="card card10">Hobbies...</div>
+                              <div class="card card11">
+                                  <h2>Listening to Songs <h2>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </section>
       </section>
+
+
     <section class="contact" id="contact">
       <div class="max-width">
         <h2 class="title">Contact me</h2>
         <div class="contact-content">
-          <div class="column left">
-          </div>
           <div class="column right">
             <div class="text">Message me</div>
             <form action="#">
@@ -275,7 +240,7 @@
         <span class="far fa-copyright"></span> 2022 All rights reserved.</span
       >
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="jacascr.js"></script>
   </body>
 </html>

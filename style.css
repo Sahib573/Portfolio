@@ -5,12 +5,15 @@
   text-decoration: none;
 }
 
-section,
-#nav-id {
+section {
   padding: 30px 30px;
 }
 
-section.home{
+#nav-id {
+  padding: 15px 30px;
+}
+
+section.home {
   padding: 20px 80px;
 }
 
@@ -19,6 +22,7 @@ section .title {
   text-align: center;
   font-size: 40px;
   font-weight: 800;
+  /* margin-top: 10px; */
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-style: italic;
@@ -41,12 +45,12 @@ section .title {
 }
 .navbar.sticky {
   padding: 15px 0px;
-  background: rgb(241, 78, 78);
+  background: crimson;
 }
 .navbar .max-width {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .navbar .logo a {
   color: rgb(152, 173, 132);
@@ -89,7 +93,7 @@ section .title {
   display: flex;
   background-image: url("samantha-gades-BlIhVfXbi9s-unsplash.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   height: 100vh;
   color: #fff;
   background-position: center;
@@ -149,23 +153,29 @@ section .title {
   margin-bottom: 0%;
 }
 .about .about-content .left {
-  width: 45%;
+  width: 35%;
 }
 .about .about-content .left img {
+  background-image: url("media/IMG_9755.jpg");
   height: 500px;
   width: 400px;
+  background-size: 400px;
   object-fit: cover;
   border-radius: 6px;
   border-radius: 500px;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
 }
-
+.about .about-content .left img:hover {
+  background-size: 500px;
+}
 .about .about-content,
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .about .about-content .right {
   width: 55%;
@@ -181,6 +191,7 @@ section .title {
 .about .about-content .right p {
   text-align: justify;
 }
+
 .about .about-content .right a {
   display: inline-block;
   background: crimson;
@@ -241,7 +252,7 @@ section .title {
   display: flex;
   margin-bottom: 5px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .skills .skills-content .right span {
   font-weight: 500;
@@ -288,20 +299,21 @@ section .title {
   background-image: url("17973908.jpg");
   background-size: cover;
   background-attachment: fixed;
+  /* display:flex; */
   min-height: 100vh;
 }
 .pj-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   row-gap: 20px;
   margin-bottom: 40px;
+  min-height: 100vh;
 }
-.pj-container .card {
+/* .pj-container .card {
   flex-basis: 45%;
-  background-color: rgb(141, 129, 129);
-  border-radius: 10px;
+  background-color: rgb(100 93 93 / 46%);  border-radius: 10px;
   padding: 20px;
   line-height: 30px;
   transition: all 0.6s ease;
@@ -339,10 +351,10 @@ section .title {
 .proj .pj-container .card .box a:hover {
   color: black;
   background: none;
-}
+} */
 
-.hobby {
-  /* background-color: rgb(214, 74, 74); */
+/* .hobby {
+  margin: top 20px;
   background-image: url("17973908.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -351,7 +363,7 @@ section .title {
 }
 .hobby-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   row-gap: 20px;
@@ -359,20 +371,19 @@ section .title {
 }
 .hobby-content .card {
   flex-basis: 45%;
-  background-color: rgb(153, 103, 124);
+  background-color: rgba(148, 140, 144, 0.43);
   border-radius: 10px;
-  padding: 20px;
   line-height: 30px;
   transition: all 0.6s ease;
 }
 .hobby-content .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .hobby-content .card .box .icons {
   font-size: 30px;
   text-align: center;
-}
+} */
 #hobby,
 #contact {
   margin-bottom: 0%;
@@ -400,7 +411,7 @@ section .title {
 
 .contact .contact-content .row {
   display: flex;
-  height: 75px;
+  /* height: 75px; */
   align-items: center;
 }
 .contact .contact-content .row .info {
@@ -424,6 +435,8 @@ section .title {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
+  border:2px solid crimson;
+  border-radius: 5px;
 }
 .contact .right form .textarea {
   height: 50px;
@@ -500,10 +513,10 @@ footer span a:hover {
 }
 
 @media (max-width: 700px) {
-  section.home{
+  section.home {
     padding: 20px 40px;
   }
-  
+
   .navbar .logo a {
     color: rgb(152, 173, 132);
     font-size: 25px;
@@ -599,23 +612,235 @@ footer span a:hover {
   .navbar .logo a {
     font-size: 0px;
   }
-  .pj-container{
+  .pj-container {
     justify-content: center;
   }
   .pj-container .card {
     flex-basis: 80%;
   }
-  .home .home-content a{
-    padding:10px;
+  .home .home-content a {
+    padding: 10px;
     margin-left: 5px;
   }
 }
 
 @media (max-width: 576px) {
-  .hobby-content{
+  .hobby-content {
     justify-content: center;
   }
-  .hobby-content .card{
+  .hobby-content .card {
     flex-basis: 80%;
   }
+}
+
+.pj-container .box p {
+  color: black;
+}
+.pj-container .box a {
+  display: inline-block;
+  color: white;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.pj-container .box a:hover {
+  background: none;
+}
+.pj-container .blue a {
+  background: blue;
+  border: 2px solid blue;
+}
+.pj-container .blue a:hover {
+  color: blue;
+}
+.pj-container .red a {
+  background: crimson;
+  border: 2px solid crimson;
+}
+.pj-container .red a:hover {
+  color: crimson;
+}
+.pj-container .cyan a {
+  background: cyan;
+  border: 2px solid cyan;
+}
+.pj-container .cyan a:hover {
+  color: cyan;
+}
+.pj-container .orange a {
+  background: orange;
+  border: 2px solid orange;
+}
+.pj-container .orange a:hover {
+  color: orange;
+}
+
+.pj-container .box {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: -30px 30px 20px -30px #030303ab;
+  padding: 30px;
+  margin: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.pj-container img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+  .pj-container .box {
+    flex-basis: 100%;
+    padding: 0;
+    margin: 30px 0;
+  }
+}
+
+.pj-container .cyan {
+  border-top: 6px solid cyan;
+}
+.pj-container .red {
+  border-top: 6px solid crimson;
+}
+.pj-container .blue {
+  border-top: 6px solid blue;
+}
+.pj-container .orange {
+  border-top: 6px solid orange;
+}
+
+.pj-container .box:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 920px) {
+  .pj-container .row1-container,
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .pj-container .box-down {
+    position: relative;
+    top: 100px;
+  }
+  .pj-container .box {
+    flex-basis: 43%;
+  }
+}
+@media (min-width: 920px) {
+  .pj-container .row1-container,
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .pj-container .box-down {
+    position: relative;
+    top: 150px;
+  }
+  .pj-container .box {
+    flex-basis: 40%;
+  }
+}
+@media (max-width:680px){
+  .pj-container .box {
+    flex-basis: 90%;
+  }
+  .pj-container .box-down {
+    position: relative;
+    top: 0px;
+  }
+}
+
+
+
+#my-hobby{
+  margin: top 20px;
+  background-image: url("17973908.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hobby-box .card:hover {
+	z-index: 1;
+	color: #fff;
+	background: rgb(219, 108, 130);
+	opacity: 1;
+	transform: scale(1.05) rotateZ(-5deg);
+	cursor: pointer;
+}
+
+.hobby-box .card {
+	padding: 10px;
+	background: #9722f05c;
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
+	}
+.hobby-box{
+	display: grid;
+	/* overflow: hidden; */
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+
+.hobby-box .card1 {
+  min-height: 100px;
+	grid-area: 1 / 1 / 3 / 2;
+}
+.hobby-box .card4 {
+  grid-area: 1 / 3 / 3/ 5;
+}
+.hobby-box .card8 {
+  grid-area: 1 / 5 / 3 / 6;
+}
+.hobby-box .card6 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.hobby-box .card2 {
+  min-height: 120px;
+  grid-area: 3/ 3 / 4 / 4;
+}
+.hobby-box .card7 {
+	grid-area: 3 / 4 / 5 / 5;
+}
+.hobby-box .card10 {
+  grid-area: 3 / 5 / 4 / 6;
+}
+.hobby-box .card3 {
+  grid-area: 4 / 1 / 6 / 4;
+}
+.hobby-box .card11 {
+	grid-area: 4 / 5 / 6 / 6;
+}
+
+.hobby-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 730px) {
+	.hobby-box{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(6, minmax(auto, 300px));
+		overflow-y: scroll;
+	}
+
+	.hobby-box .card1 {
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.hobby-box .card {
+		grid-area: auto;
+		text-align: left;
+	}
 }
