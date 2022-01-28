@@ -9,7 +9,6 @@ section {
   padding: 30px 30px;
 }
 
-
 #nav-id {
   padding: 15px 30px;
 }
@@ -873,6 +872,11 @@ footer span a:hover {
   letter-spacing: 8px;
   margin-bottom: 15px;
   color: #c51b78;
+}
+#load {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
 }
 @keyframes text {
   0% {
