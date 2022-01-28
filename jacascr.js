@@ -5,7 +5,7 @@ function preload() {
     document.getElementById("txt1").style.display = "none";
     document.getElementById("txt2").style.display = "none";
     document.body.style.backgroundColor = "#fff";
-  }, 3000);
+  }, 500);
 }
 
 document.addEventListener("scroll", function () {
