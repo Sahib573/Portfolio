@@ -9,7 +9,6 @@ section {
   padding: 30px 30px;
 }
 
-
 #nav-id {
   padding: 15px 30px;
 }
@@ -436,7 +435,7 @@ section .title {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
-  border:2px solid crimson;
+  border: 2px solid crimson;
   border-radius: 5px;
 }
 .contact .right form .textarea {
@@ -748,7 +747,7 @@ footer span a:hover {
     flex-basis: 40%;
   }
 }
-@media (max-width:680px){
+@media (max-width: 680px) {
   .pj-container .box {
     flex-basis: 90%;
   }
@@ -758,9 +757,7 @@ footer span a:hover {
   }
 }
 
-
-
-#my-hobby{
+#my-hobby {
   margin: top 20px;
   background-image: url("17973908.jpg");
   background-size: cover;
@@ -769,34 +766,34 @@ footer span a:hover {
 }
 
 .hobby-box .card:hover {
-	z-index: 1;
-	color: #fff;
-	background: rgb(219, 108, 130);
-	opacity: 1;
-	transform: scale(1.05) rotateZ(-5deg);
-	cursor: pointer;
+  z-index: 1;
+  color: #fff;
+  background: rgb(219, 108, 130);
+  opacity: 1;
+  transform: scale(1.05) rotateZ(-5deg);
+  cursor: pointer;
 }
 
 .hobby-box .card {
-	padding: 10px;
-	background: #9722f05c;
-	border-radius: 10px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	transition: all 0.5s ease-in-out;
-	}
-.hobby-box{
-	display: grid;
-	/* overflow: hidden; */
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	grid-gap: 20px;
+  padding: 10px;
+  background: #9722f05c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.hobby-box {
+  display: grid;
+  /* overflow: hidden; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 .hobby-box .card1 {
   min-height: 100px;
-	grid-area: 1 / 1 / 3 / 2;
+  grid-area: 1 / 1 / 3 / 2;
 }
 .hobby-box .card4 {
   grid-area: 1 / 3 / 3/ 5;
@@ -812,7 +809,7 @@ footer span a:hover {
   grid-area: 3/ 3 / 4 / 4;
 }
 .hobby-box .card7 {
-	grid-area: 3 / 4 / 5 / 5;
+  grid-area: 3 / 4 / 5 / 5;
 }
 .hobby-box .card10 {
   grid-area: 3 / 5 / 4 / 6;
@@ -821,27 +818,86 @@ footer span a:hover {
   grid-area: 4 / 1 / 6 / 4;
 }
 .hobby-box .card11 {
-	grid-area: 4 / 5 / 6 / 6;
+  grid-area: 4 / 5 / 6 / 6;
 }
 
 .hobby-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 730px) {
-	.hobby-box{
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(6, minmax(auto, 300px));
-		overflow-y: scroll;
-	}
+  .hobby-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, minmax(auto, 300px));
+    overflow-y: scroll;
+  }
 
-	.hobby-box .card1 {
-		grid-area: 1 / 1 / 2 / 3;
-	}
-	.hobby-box .card {
-		grid-area: auto;
-		text-align: left;
-	}
+  .hobby-box .card1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .hobby-box .card {
+    grid-area: auto;
+    text-align: left;
+  }
+}
+
+.preload-container {
+  text-align: center;
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  animation: animation-preload 1s linear infinite;
+}
+.preload-container span {
+  display: block;
+}
+.txt1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  color: #b1b3b4;
+  background: black;
+  position: relative;
+  animation: text 3s infinite;
+  text-shadow: 2px 2px 2px #cc2394;
+  font-family: "Courier New", Courier, monospace;
+}
+.txt2 {
+  font-size: 13px;
+  letter-spacing: 8px;
+  margin-bottom: 15px;
+  color: #c51b78;
+}
+#load {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+@keyframes text {
+  0% {
+    color: black;
+  }
+  30% {
+    letter-spacing: 30px;
+  }
+  50% {
+    color: #c51b78;
+  }
+  100% {
+    letter-spacing: 12px;
+    opacity: 0;
+  }
+}
+@keyframes animation-preload {
+  from {
+    text-shadow: 10px 4px 10px #c51b78;
+  }
+  to {
+    text-shadow: 0 0 0 red;
+  }
 }
