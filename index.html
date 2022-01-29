@@ -1,118 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sahib Singh</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/fbe0c6d47d.js" crossorigin="anonymous"></script>
-  </head>
-  <body style="background-color: #000;" onload="preload()" >
 
-    <div id="load" >		    
-      <div class="preload-container" id="preload-container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahib Singh</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/fbe0c6d47d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="load">
+    <div class="preload-container" id="preload-container">
       <span class="txt1" id="txt1">{Sahib Singh}</span>
-      <span  id="txt2" class="txt2">Loading...</span>	
-      </div>		    
+      <span id="txt2" class="txt2">Loading...</span>
+    </div>
+  </div>
+  <nav id="nav-id" class="navbar">
+    <div class="max-width nav-flex">
+      <div class="logo">
+        <a href="#"><span>{</span> Sahib<span>Singh</span>}</a>
       </div>
-    <nav id="nav-id" class="navbar">
-      <div class="max-width">
-        <div class="logo">
-          <a href="#"><span>{</span> Sahib<span>Singh</span>}</a>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#proj" class="menu-btn">Projects</a></li>
+        <li><a href="#skills" class="menu-btn">Skills</a></li>
+        <li><a href="#hobby" class="menu-btn">Hobbies</a></li>
+      </ul>
+  </nav>
+  <section class="home" id="home">
+    <div class="max-width">
+      <div data-tilt data-tilt-scale="2" data-tilt-startY="40" class="home-content"
+        style="transform: translateZ(20px);">
+        <div style="transform: translateZ(60px);" class="text-1">Hello, I am</div>
+        <div style="transform: translateZ(80px);" class="text-2">Sahib Singh</div>
+        <div style="transform: translateZ(100px); " class="text-3">And I'm a <span class="typing"></span></div>
+        <a href="#hobby">My Hobbies</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img alt="" />
         </div>
-        <ul class="menu">
-          <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#about" class="menu-btn">About</a></li>
-          <li><a href="#proj" class="menu-btn">Projects</a></li>
-          <li><a href="#skills" class="menu-btn">Skills</a></li>
-          <li><a href="#hobby" class="menu-btn">My Hobbies</a></li>
-        </ul>
-    </nav>
-    <section class="home" id="home">
-      <div class="max-width">
-        <div data-tilt data-tilt-scale="2" data-tilt-startY="40" class="home-content" style="transform: translateZ(20px);">
-          <div style="transform: translateZ(60px);" class="text-1">Hello, I am</div>
-          <div style="transform: translateZ(80px);" class="text-2">Sahib Singh</div>
-          <div style="transform: translateZ(100px); "class="text-3">And I'm a <span class="typing"></span></div>
-          <a href="#hobby">My Hobbies</a>
-          <a href="#skills">Skills</a>
+        <div class="column right">
+          <div class="text"><span class="about-type"></span>
+          </div>
+          <p style="font-size: 23px;line-height: 35px;">
+            I am from Pehowa , a small town in Kurukshetra (Haryana). I have completed my secondary education from D.A.V
+            Cantenary Public School, Pehowa. Currently, I am pursuing my Bachelor degree from Netaji Subhash University
+            of Technology, Delhi in Computer Science and Engineering branch. I am interested in web development .I love
+            to work in team and do discussion with team members and taking theirs ideas and feedback. Love to explore
+            new things and always hope for best. Love to listen to songs and poems, and like to read quotes.I am fan of
+            Nikola Tesla.
+          </p>
+          <a href="https://www.linkedin.com/in/sahib-singh-b55485200/">Follow on Linkedin</a>
         </div>
       </div>
-    </section>
-    <section class="about" id="about">
-      <div class="max-width">
-        <h2 class="title">About me</h2>
-        <div class="about-content">
-          <div class="column left">
-            <img alt="" />
-          </div>
-          <div class="column right">
-            <div class="text"><span class="about-type"></span>
-          </div>
-            <p style="font-size: 23px;line-height: 35px;">
-             I am from Pehowa , a small town in Kurukshetra (Haryana). I have completed my secondary education from D.A.V Cantenary Public School, Pehowa. Currently, I am pursuing my Bachelor degree from Netaji Subhash University of Technology, Delhi in Computer Science and Engineering branch. I am interested in web development .I love to work in team and do discussion with team members and taking theirs ideas and feedback. Love to explore new things and always hope for best. Love to listen to songs and poems, and like to read quotes.I am fan of Nikola Tesla.
-            </p>
-            <a href="https://www.linkedin.com/in/sahib-singh-b55485200/">Follow on Linkedin</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="skills" id="skills">
-      <div class="max-width">
-        <h2 class="title">My skills</h2>
-        <div class="skills-content">
-          <div class="column left" style="margin:auto;"> 
-            <div class="text">
-              I know <span class="skill-typing"></span>
-            </div>
-            <p style="font-size: 23px;line-height: 35px;">
-             I know programming language like C++, C and little bit of Python. In the field of web , i know HTML, CSS and frameworks like Bootstrap and Tailwind, scripting language JavaScript, ReactJs and Next.js. In backend , i have built a project with PHP and Django and currently learning Firebase. 
-            </p>
-            <a href="https://github.com/Sahib573" style="font-size:25px;">Follow on GitHub</a>
+  <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">My skills</h2>
+      <div class="skills-content">
+        <div class="column left" style="margin:auto;">
+          <div class="text">
+            I know <span class="skill-typing"></span>
           </div>
-          <div class="column right" style="margin:auto;">
-            <div class="bars">
-              <div class="info">
-                <span>HTML</span>
-                <span>90%</span>
-              </div>
-              <div class="line html"></div>
+          <p style="font-size: 23px;line-height: 35px;">
+            I know programming language like C++, C and little bit of Python. In the field of web , i know HTML, CSS and
+            frameworks like Bootstrap and Tailwind, scripting language JavaScript, ReactJs and Next.js. In backend , i
+            have built a project with PHP and Django and currently learning Firebase.
+          </p>
+          <a href="https://github.com/Sahib573" style="font-size:25px;">Follow on GitHub</a>
+        </div>
+        <div class="column right" style="margin:auto;">
+          <div class="bars">
+            <div class="info">
+              <span>C++</span>
+              <span>85%</span>
             </div>
-            <div class="bars">
-              <div class="info">
-                <span>CSS, Bootstrap and Tailwind</span>
-                <span>60%</span>
-              </div>
-              <div class="line css"></div>
+            <div class="line html"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span>
+              <span>85%</span>
             </div>
-            <div class="bars">
-              <div class="info">
-                <span>JavaScript, Jquery</span>
-                <span>80%</span>
-              </div>
-              <div class="line js"></div>
+            <div class="line html"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>CSS, Bootstrap and Tailwind</span>
+              <span>75%</span>
             </div>
-            <div class="bars">
-              <div class="info">
-                <span>PHP</span>
-                <span>50%</span>
-              </div>
-              <div class="line php"></div>
+            <div class="line css"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>JavaScript, Jquery</span>
+              <span>80%</span>
             </div>
-            <div class="bars">
-              <div class="info">
-                <span>ReactJs and Next.js</span>
-                <span>65%</span>
-              </div>
-              <div class="line react"></div>
+            <div class="line js"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>PHP</span>
+              <span>50%</span>
             </div>
-            <div class="bars">
-              <div class="info">
-                <span>MySQL</span>
-                <span>50%</span>
-              </div>
-              <div class="line mysql"></div>
+            <div class="line php"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>ReactJs and Next.js</span>
+              <span>70%</span>
+            </div>
+            <div class="line react"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>MySQL</span>
+              <span>50%</span>
+            </div>
+            <div class="line mysql"></div>
           </div>
           <div class="bars">
             <div class="info">
@@ -120,134 +137,160 @@
               <span>40%</span>
             </div>
             <div class="line django"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>Python</span>
+              <span>40%</span>
+            </div>
+            <div class="line django"></div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="proj" id="proj">
-      <div class="max-width">
-        <h2 class="title">My projects</h2>
-        <div class="pj-container">
-          <div class="row1-container">
-            <div class="box box-down cyan">
-              <h2>Clomira</h2>
-              <p>
-                An undergoing project. A website being designed for college
-                students where they will not only find study material related to
-                college classes but also for general topics. And Doubt section
-                for interaction with peers.
-              </p>
-              <a href="https://github.com/Sahib573/clomira">Visit</a>
-            </div>
-  
-            <div class="box red">
-              <h2>Chrome-Youtube-EXtension</h2>
-              <p>
-                It is an extension for Utube in which we added country icon
-                alongwith channel name and added some features like
-                <span>Theatre Mode</span> , <span>Concentration Mode</span> and
-                other like font change and size change with some validations
-              </p>
-              <a href="https://github.com/Sahib573/yt-chrome-ext">Visit</a>
-            </div>
-  
-            <div class="box box-down blue">
-              <h2>   Shopify</h2>
-              <p>
-                It is a E-commerce WEbsite built using DJango and HTML, CSS,
-                JavaScript and JQuery in which products can be added to cart and
-                then checkout and other features like complaint page and tracker
-                using order id obtained while ordering the item.
-              </p>
-              <a href="https://github.com/Sahib573/Shopify">Visit</a>
-            </div>
-            <div class="box orange">
-              <h2>Foodipie</h2>
-              <p>It is a food ordering site in which we fetched data from an <span>API</span>. Customer can click on particular item and can we products details like ingredients and price and can also watch Youtube Video to prepare that dish
-              </p>    
-              <a href="https://github.com/Sahib573/Foodipie">Visit</a>
-            </div
-            >
-            <div class="row2-container">
-            </div>
+  </section>
+  <section class="proj" id="proj">
+    <div class="max-width">
+      <h2 class="title">My projects</h2>
+      <div class="pj-container">
+        <div class="row1-container">
+          <div class="box box-down cyan">
+            <h2>Clomira</h2>
+            <p>
+              An undergoing project. A website being designed for college
+              students where they will not only find study material related to
+              college classes but also for general topics. And Doubt section
+              for interaction with peers. Implemented using <b>Next.js and firebse</b>
+            </p>
+            <a href="https://github.com/Sahib573/clomira">Visit</a>
+          </div>
+
+          <div class="box red">
+            <h2>Chrome-Youtube-EXtension</h2>
+            <p>
+              It is an extension for Utube in which we added country icon
+              alongwith channel name and added some features like
+              <span>Theatre Mode</span> , <span>Concentration Mode</span> and
+              other like font change and size change with some validations
+            </p>
+            <a href="https://github.com/Sahib573/yt-chrome-ext">Visit</a>
+          </div>
+
+          <div class="box box-down blue">
+            <h2> Shopify</h2>
+            <p>
+              It is a E-commerce WEbsite built using <b>DJango and HTML, CSS,
+                JavaScript and JQuery</b> in which products can be added to cart and
+              then checkout and other features like complaint page and tracker
+              using order id obtained while ordering the item.
+            </p>
+            <a href="https://github.com/Sahib573/Shopify">Visit</a>
+          </div>
+          <div class="box orange">
+            <h2>Foodipie</h2>
+            <p>It is a food ordering site in which we fetched data from an <b>API</b>. Customer can click on
+              particular item and can we products details like ingredients and price and can also watch Youtube Video to
+              prepare that dish
+            </p>
+            <a href="https://github.com/Sahib573/Foodipie">Visit</a>
+          </div>
+
+
+
+          <div class="box box-down c1">
+            <h2> Portfolio</h2>
+            <p>
+              The current website. It is designed using simple HTML, CSS and Javascript telling a little bit about me.
+            </p>
+            <a href="https://github.com/Sahib573/Shopify">Visit</a>
+          </div>
+          <div class="box c2">
+            <h2>Food ordering site</h2>
+            <p>It is a food ordering site in which we fetched data from Backend which is implemented using PHP.
+            </p>
+            <a href="https://github.com/Sahib573/Foodipie">Visit</a>
+          </div>
+
+
+
+          <div class="row2-container">
           </div>
         </div>
       </div>
-    </section>
-      <section id="my-hobby">
-        <div class="hobby" style="margin-top: 200px;">
-          <h2 style="text-align: center; margin-bottom:60px;font-size: 40px;font-style: italic;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">My Hobbies</h2>
-          <div class="max-width">
-              <div class="hobby-box" >
-                  <div class="hobby-content card1">
-                          <h1 style="text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hobbies are great distractions from the worries and troubles that plague daily living.</h1>
-                      </div>
-                      <div class="card card2">
-                          <h2>I like to do random things .<h2>
-                          </div>
-                          <div class="card card3"> I like play and learn Tabla and Harmonium (classical musical instruments).
-                          </div>
-                          <div class="card card4">   I like to watch Interviews, vlogs and Tech related videos specially space and time like stuff over Youtube and watching movies with friends.
-               
-                          </div>
-                         
-                      <div class="card card7"> I like play and learn Tabla and Harmonium (classical musical instruments).
-                      </div>
-                      <div class="card card8">
-                              <h2>Doing random things makes me happy.<h2>
-                              </div>
-                              <div class="card card10">Hobbies...</div>
-                              <div class="card card11">
-                                  <h2>Listening to Songs <h2>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      </section>
-      </section>
-
-
-    <section class="contact" id="contact">
+    </div>
+  </section>
+  <section id="my-hobby">
+    <div class="hobby" style="margin-top: 200px;">
+      <h2
+        style="text-align: center; margin-bottom:60px;font-size: 40px;font-style: italic;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        My Hobbies</h2>
       <div class="max-width">
-        <h2 class="title">Contact me</h2>
-        <div class="contact-content">
-          <div class="column right">
-            <div class="text">Message me</div>
-            <form action="#">
-              <div class="fields">
-                <div class="field name">
-                  <input type="text" placeholder="Name" required />
-                </div>
-                <div class="field email">
-                  <input type="email" placeholder="Email" required />
-                </div>
-              </div>
-              <div class="field">
-                <input type="text" placeholder="Subject" required />
-              </div>
-              <div class="field textarea">
-                <textarea
-                  cols="30"
-                  rows="20"
-                  placeholder="Message.."
-                  required
-                ></textarea>
-              </div>
-              <div class="button-area">
-                <button type="submit">Send message</button>
-              </div>
-            </form>
+        <div class="hobby-box">
+          <div class="hobby-content card1">
+            <h1 style="text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+              Hobbies are great distractions from the worries and troubles that plague daily living.</h1>
+          </div>
+          <div class="card card2">
+            <h2>I like to do random things .<h2>
+          </div>
+          <div class="card card3"> I like play and learn Tabla and Harmonium (classical musical instruments).
+          </div>
+          <div class="card card4"> I like to watch Interviews, vlogs and Tech related videos specially space and time
+            like stuff over Youtube and watching movies with friends.
+
+          </div>
+
+          <div class="card card7"> I like play and learn Tabla and Harmonium (classical musical instruments).
+          </div>
+          <div class="card card8">
+            <h2>Doing random things makes me happy.<h2>
+          </div>
+          <div class="card card10">Hobbies...</div>
+          <div class="card card11">
+            <h2>Listening to Songs <h2>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  </section>
 
-    <footer>
-      <span
-        >Created By <a href="https://www.github.com/Sahib573">Sahib Singh</a> |
-        <span class="far fa-copyright"></span> 2022 All rights reserved.</span
-      >
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="jacascr.js"></script>
-  </body>
+
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+        <div class="column right">
+          <div class="text">Message me</div>
+          <form action="#">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" placeholder="Name" required />
+              </div>
+              <div class="field email">
+                <input type="email" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="20" placeholder="Message.." required
+                style="overflow:auto;resize:none"></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Created By <a href="https://www.github.com/Sahib573">Sahib Singh</a> |
+      <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="jacascr.js"></script>
+</body>
+
 </html>

@@ -1,12 +1,15 @@
-function preload() {
+
+window.addEventListener("load",function (e) {
   setTimeout(function () {
     document.getElementById("load").style.display = "none";
     document.getElementById("preload-container").style.display = "none";
     document.getElementById("txt1").style.display = "none";
     document.getElementById("txt2").style.display = "none";
     document.body.style.backgroundColor = "#fff";
-  }, 500);
-}
+  }, 1000)
+})
+
+
 
 document.addEventListener("scroll", function () {
   if (window.scrollY > 20) {
@@ -17,7 +20,7 @@ document.addEventListener("scroll", function () {
 });
 
 var intro = new Typed(".typing", {
-  strings: ["NSUTian", "Web Development", "Learner", "Programming"],
+  strings: ["NSUTian", "Web Developer", "Learner", "Programmer"],
   typeSpeed: 100,
   backSpeed: 50,
   loop: true,

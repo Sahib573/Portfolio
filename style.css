@@ -9,9 +9,10 @@ section {
   padding: 30px 30px;
 }
 
-#nav-id {
+/* #nav-id {
   padding: 15px 30px;
-}
+} */
+
 
 section.home {
   padding: 20px 80px;
@@ -39,12 +40,12 @@ section .title {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 10px 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .navbar.sticky {
-  padding: 15px 0px;
+  padding: 10px 0px;
   background: crimson;
 }
 .navbar .max-width {
@@ -52,11 +53,33 @@ section .title {
   align-items: center;
   justify-content: space-evenly;
 }
+
+.nav-flex{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar .logo{
+  flex-basis: 30%;
+}
+.navbar .menu{
+  flex-basis: 65%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+.navbar .menu li{
+  flex-basis: 19%;
+}
 .navbar .logo a {
   color: rgb(152, 173, 132);
   font-size: 35px;
   font-weight: 900;
 }
+
 .navbar .logo a span {
   color: crimson;
   transition: all 0.1s ease;
@@ -73,8 +96,8 @@ section .title {
   color: #fff;
   font-size: 25px;
   font-weight: 500;
-  margin-left: 40px;
-  margin-right: 5px;
+  /* margin-left: 40px;
+  margin-right: 5px; */
   transition: color 0s ease-in-out;
 }
 .navbar .menu li a:hover {
@@ -82,12 +105,24 @@ section .title {
 }
 
 .navbar .menu li a:active {
-  border-bottom: 2px solid black;
   color: rgb(57, 216, 65);
 }
 .navbar .menu li a:visited {
-  border-bottom: 2px solid rgb(109, 34, 78);
+  /* color: crimson; */
 }
+
+@media (max-width: 725px) {
+  .navbar .logo{
+    text-align: center;
+    flex-basis: 55%;
+  }
+  .navbar .menu {
+    justify-content:space-evenly;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
 
 .home {
   display: flex;
@@ -273,10 +308,10 @@ section .title {
   background: crimson;
 }
 .skills-content .right .html::before {
-  width: 90%;
+  width: 85%;
 }
 .skills-content .right .css::before {
-  width: 60%;
+  width: 75%;
 }
 .skills-content .right .js::before {
   width: 80%;
@@ -291,7 +326,7 @@ section .title {
   width: 40%;
 }
 .skills-content .right .react::before {
-  width: 65%;
+  width: 70%;
 }
 
 .proj {
@@ -603,15 +638,7 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 500px) {
-  .navbar .logo a {
-    font-size: 0px;
-  }
-}
 @media (max-width: 576px) {
-  .navbar .logo a {
-    font-size: 0px;
-  }
   .pj-container {
     justify-content: center;
   }
@@ -654,6 +681,26 @@ footer span a:hover {
 }
 .pj-container .blue a:hover {
   color: blue;
+}
+.pj-container .c1 a {
+  background: rgb(83 95 95);
+  border: 2px solid rgb(83 95 95);
+}
+.pj-container .c1 {
+  border-top: 6px solid rgb(83 95 95);
+}
+.pj-container .c2{
+  border-top: 6px solid #24b32f;
+}
+.pj-container .c1 a:hover {
+  color: rgb(83 95 95);
+}
+.pj-container .c2 a {
+  background: #24b32f;
+  border: 2px solid #24b32f;
+}
+.pj-container .c2 a:hover {
+  color: #24b32f;
 }
 .pj-container .red a {
   background: crimson;
