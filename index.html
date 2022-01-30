@@ -261,15 +261,23 @@
       <div class="contact-content">
         <div class="column right">
           <div class="text">Message me</div>
-          <form action="#">
+          <form action="https://formsubmit.co/gurdeepsingh74108@gmail.com" method="POST">
             <div class="fields">
               <div class="field name">
                 <input type="text" placeholder="Name" required />
               </div>
               <div class="field email">
-                <input type="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Email" required />
               </div>
             </div>
+              <div class="field email">
+                <input type="hidden" name="_next" value="thanks.html">
+              </div>
+            <!-- </div> -->
+              <div class="field email">
+                <input type="hidden" name="_autoresponse" value="Thank you for sharing your thoughts.">
+              </div>
+            <!-- </div> -->
             <div class="field">
               <input type="text" placeholder="Subject" required />
             </div>
